@@ -30,8 +30,7 @@ class Products {
     }
 
     totalCostProducts() {
-        let totalCost = this.data.reduce(((total, item) => total + item.price),0);
-        console.log(totalCost);
+        return  this.products.reduce(((total, item) => total + item.price),0);
     }
 }
 
@@ -84,4 +83,5 @@ class CartItem {
 }
 
 const list = new Products('.products');
+
 
